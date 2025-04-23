@@ -240,15 +240,13 @@
     margin-top: 20px;
   }
 
-  /* Centralizar a imagem do cardápio */
   .imagem-cardapio {
-    display: none; /* esconde por padrão */
+    display: none; 
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
 
-/* Quando estiver visível, vira flex e centraliza */
   .imagem-cardapio.ativo {
     display: flex;
   }
