@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>SteakMe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<body>
+  <!-- Logo -->
+  <header class="header">
+    <img src="img/logo-steakme.png" alt="Logo SteakMe" class="logo">
+    <nav class="menu">
+        <section id = paragrafo-logo class="section">
+          <p>Carne no espeto e cerveja gelada no bico desde 2014.</p>
+        </section>
+      <a href="#sobre">SOBRE NÓS</a>
+      <a href="#cardapio">CARDÁPIO</a>
+      <a href="#contato">CONTATO</a>
+      <a href="#informacoes">INFORMAÇÕES</a>
+    </nav>
+  </header>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="section">
+    <h1>Sobre Nós</h1>
+    <p>Desde 2014 no coração do Vila da Serra, o SteakMe é referência em espetinhos e eventos. Inspirado no Meatpacking District de NYC, nosso espaço une carne nobre no espeto, cerveja gelada no bico, boas histórias e tradição.</p>
+  </section>
+
+  <!-- Botão para abrir cardápio -->
+  <section id="cardapio" class="section">
+    <h2>Nosso Cardápio</h2>
+    <div class="botao-centro">
+      <button id="abrirCardapio">Abrir Cardápio</button>
+    </div> >
+    <div id="imagemCardapio" class="imagem-cardapio">
+      <img src="img/Cardapio_STK.png" alt="Cardápio SteakMe" class="cardapio-img">
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <h2>Contato e Redes:</h2>
+    <p>Email: <a href="mailto:contato@steakme.com.br">contato@steakme.com.br</a></p>
+    <p>Instagram: <a href="https://instagram.com/steakmeplease" target="_blank">@steakmeplease</a></p>
+  </section>
+
+  <section id="informacoes" class="section">
+    <h2>Informações</h2>
+    <p>Endereço:</a> Al Oscar Niemeyer, 951 - Vila da Serra, Nova Lima, Brazil 34000000</a></p>
+    <p>Horário de Funcionamento:<br> </a> Segunda-Feira 17:30-23:00 <br> Terça-Feira 17:30-23:00 <br> Quarta-Feira 17:30-00:00 <br> Quinta-Feira 17:30-00:00 <br> Sexta-Feira 17:30-00:00 <br> Sábado 17:30-23:00</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SteakMe. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Script para mostrar o cardápio
+    document.getElementById("abrirCardapio").addEventListener("click", function () {
+    const cardapio = document.getElementById("imagemCardapio");
+    cardapio.classList.toggle("ativo");
+  });
+  </script>
+
+   <a href="https://wa.me/5531983174884" class="whatsapp-float" target="_blank">
+    <img src="img/wppvermelho.png" alt="WhatsApp" width="75" height="75">
+  </a>
+
+  <a href="https://www.instagram.com/steakmeplease/" class="instagram-float" target="_blank">
+    <img src="img/instavermelho.png" alt="WhatsApp" width="80" height="80">
+  </a>
+
+
+<script>
+// Mostra/oculta os ícones ao clicar na seta
+document.getElementById("toggleFloat").addEventListener("click", function () {
+  document.getElementById("floatIcons").classList.toggle("show");
+});
+</script>
+
+</body>
+</html>
